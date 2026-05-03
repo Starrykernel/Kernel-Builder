@@ -35,7 +35,7 @@ jobs:
 
       - name: Clone kernel repo
         run: |
-          git clone https://github.com/Starrykernel/kernel_xiaomi_veux.git -b 16-Q2 kernel --depth=1
+          git clone https://github.com/Starrykernel/kernel_xiaomi_veux.git -b 16-Q2-KSU kernel --depth=1
           cd kernel 
 
       - name: Build
