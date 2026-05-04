@@ -65,7 +65,7 @@ jobs:
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: kernel/builds/*.zip
+          artifacts: ${{ env.ZIP_PATH }}
           tag: "${{ github.run_number }}"
           name: "Release ${{ env.VERSION }}"
           token: ${{ secrets.PAT_TOKEN }}
